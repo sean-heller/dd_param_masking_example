@@ -1,9 +1,10 @@
 package ddexample;
 
 import ddexample.resources.PersonResource;
-import io.dropwizard.core.Application;
-import io.dropwizard.core.setup.Bootstrap;
-import io.dropwizard.core.setup.Environment;
+import io.dropwizard.Application;
+import io.dropwizard.setup.Bootstrap;
+import io.dropwizard.setup.Environment;
+
 
 public class DDExampleApplication extends Application<DDExampleConfiguration> {
 
@@ -13,12 +14,11 @@ public class DDExampleApplication extends Application<DDExampleConfiguration> {
 
     @Override
     public String getName() {
-        return "DDExample";
+        return "application-platform-poc";
     }
 
     @Override
     public void initialize(final Bootstrap<DDExampleConfiguration> bootstrap) {
-        // TODO: application initialization
     }
 
     @Override
